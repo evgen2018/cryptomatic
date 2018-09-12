@@ -1,0 +1,167 @@
+/* RESPONSIVE GRID SYSTEM =============================================================================  */
+
+/* BASIC PAGE SETUP ============================================================================= */
+
+body {
+	margin : 0;
+	padding : 0;
+	background: #fff;
+	font-family:monospace;
+}
+/* LINKS =============================================================================  */
+
+a {
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
+}
+/* IMAGES ============================================================================= */
+
+img {
+	border :0;
+	max-width: 100%;
+	height: auto;
+	width: auto/*\9*/; /* ie8 */
+}
+img.floatleft {
+	float: left;
+	margin: 0 10px 0 0;
+}
+img.floatright {
+	float: right;
+	margin: 0 0 0 10px;
+}
+/* TABLES ============================================================================= */
+
+table {
+	border-collapse : collapse;
+	border-spacing : 0;
+	margin-bottom : 1.4em;
+	width : 105%;
+}
+th, td, caption {
+	padding : .25em 10px .25em 5px;
+}
+/*  MAIN LAYOUT	============================================================================= */
+
+
+#wrapper {
+	width: 100%;
+}
+#headcontainer {
+	width: 100%;/*background:url(../images/header-bg.png) repeat-x top center;
+	height:738px;*/
+}
+header {
+	width: 1095px; /* 1000px / 1250px */
+	max-width: 92.3em; /* 1200px / 13 */
+	margin: 0 auto;
+	padding: 60px 0 30px;
+	color: #666;
+	text-align: center;
+}
+.header_menu {
+	width:100%;
+}
+.header_menu_in {
+	width: 1095px; /* 1000px / 1250px */
+	max-width: 92.3em; /* 1200px / 13 */
+	margin: 0 auto;
+	padding: 0em 0px 0;
+	color: #666;
+	background:#999;
+}
+#maincontentcontainer {
+	width: 100%;
+	background:#fff;
+}
+#maincontent {
+	width: 1095px; /* 1000px / 1250px */
+	max-width: 92.3em; /* 1200px / 13 */
+	margin: 0 auto;
+	padding: 1em 0px;
+	color: #666;
+	line-height: 2.5em;
+}
+#footercontainer {
+	width: 100%;
+	background: #093350;
+}
+footer {
+	width: 1095px; /* 1000px / 1250px */
+	max-width: 92.3em; /* 1200px / 13 */
+	margin: 0 auto;
+	padding: 30px 0 30px;
+	color: #fff;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+/*  GROUPING  ============================================================================= */
+
+
+.group:before, .group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+	zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+	margin-left: 0;
+} /* all browsers except IE6 and lower */
+/*  GLOBAL OBJECTS ============================================================================= */
+
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+ @media only screen and ( max-width:1024px ) {
+ #headcontainer {
+ background-size:auto 100%;
+ height:auto;
+}
+}
+ @media only screen and ( max-width:769px ) {
+}
+ @media only screen and ( max-width:736px ) {
+}
+ @media only screen and ( max-width:667px ) {
+}
+ @media only screen and ( max-width:600px ) {
+}
+ @media only screen and ( max-width:568px ) {
+}
+ @media only screen and ( max-width:480px ) {
+}
+ @media only screen and ( max-width:414px ) {
+}
+ @media only screen and ( max-width:375px ) {
+ footer {
+padding-top:15px;
+padding-bottom:15px;
+}
+}
+ @media only screen and ( max-width:360px ) {
+}
+ @media only screen and ( max-width:320px ) {
+}

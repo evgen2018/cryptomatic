@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>CryptoMatic App</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta http-equiv="cleartype" content="on">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+<link rel="stylesheet" href="css/cols.css" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/font-awesome.css" media="all">
+<link rel="stylesheet" href="css/mobile.css" media="all">
+<!---->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+<!--<script src="js/jquery.fadethis.js"></script>-->
+
+
+<script>
+$(function(){
+  if($( window ).width() < 768){
+    $(".welcome-user-content-box").removeClass('slide-left');
+	$(".logo").removeClass('slide-top');
+  }
+   if($( window ).height() < 500){
+    $(".welcome-user-content-box").removeClass('slide-left');
+  }
+})
+</script>
+<style type="text/css">
+#hms {
+	display:none;
+}
+label.error {
+  color: red;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div id="wrapper" class="members-wrapper">
+  <!--header_container_start-->
+  <div id="headcontainer">
+    <div class="headertop">
+      <header>
+        <div class="logo"><a href=""><img src="images/cryptomaticapp-logo.png"></a></div>
+        <h2 class="headertop-hl">Füllen Sie das Formular aus und sichern Sie sich <br>
+          so sofortigen Zugang zu CryptoMatic App mit einem <br>
+          <span class="c_yellow">wöchentlichen Renditen von €12.000!</span></h2>
+      </header>
+      <!--header video and form sec start-->
+      <div class="headerform-sec">
+        <div class="section group">
+          <div class="col span_8">
+            <div class="header-banner">
+              <div class="banner-in" style="position: relative;">
+                <div class="up_sound">Sound einschalten</div>
+                     <img src="images/volume.png" id="volume_up">
+              <div class="anticlicker" style=" position: absolute; bottom: 0; left: 80%; top: 85%; right: 0; z-index: 5; "></div>
+             <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/_rYwEzkTcOc?autoplay=0&amp;controls=0&amp;disablekb=0&amp;loop=1&amp;modestbranding=0&amp;rel=0&amp;showinfo=0&amp;playlist=_rYwEzkTcOc&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fen.bitcoin-system.online" frameborder="0" allowfullscreen="" data-gtm-yt-inspected-8157726_6="true" id="710846225"></iframe> -->
+             <div id="ytplayer"></div>
+              </div>
+              <!--banner-in-->
+            </div>
+            <!--header-banner-->
+          </div>
+          <!--col span_8-->
+          <div class="col span_4">
+            <div class="signup-form slide-left members-form1">
+              <h5 class="form-hl font20">Registrieren Sie sich jetzt <br>
+                um ein Teil von CryptoMatic <br>
+                zu werden</h5>
+                
+                
+              <div class="form-field">
+              <form action="http://cabinet.de.cryptomatic-app.com/register" method="POST" id="bigForm1" onsubmit="gtag('event', 'submitLand', { 'event_category': 'submitForm'});w.yaCounter49768696.reachGoal ('submitLand');">
+                <input type="text" class="name-input first_nameInclude" placeholder="Vorname" value="" name="first_name">
+                <input type="text" class="name-input last_nameInclude" placeholder="Nachname" name="last_name">
+                <input type="email" class="email-input emailInclude" placeholder="E-Mail" value="" name="email">
+                <input type="password" class="password-input" placeholder="Wählen Sie ein Passwort" name="password">
+                <div class="phno-field">
+                  <div class="countrycode">
+                    <input type="text" class="phonecc pho" placeholder="Vorwahl" name="phonecc" style="padding-left: 42px" maxlength="4">
+                  </div>
+                  <div class="phno">
+                    <input type="text" class="phone-input" placeholder="Telefonnummer" name="phone" style="padding-left: 38px; ">
+                  </div>
+                </div>
+                <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
+                <input type="hidden" class="affiliate_id" name="affiliate_id" value="" autocomplete="off">
+                <input type="submit" value="Beginnen sie jetzt Geld zu verdienen">
+                </form>
+              </div>
+            </div>
+            <!--signup-form-->
+          </div>
+          <!--col span_4-->
+        </div>
+        <!--section-->
+      </div>
+      <!--header video and form sec end-->
+    </div>
+  </div>
+  <!--headcontainer-->
+  <!--header_container_end-->
+  <div class="counter-sec1">
+    <div class="testi-hl">
+      <div class="testi-container">
+        <!--<h3>DAS SAGEN ANDERE ÜBER UNS:</h3>-->
+        <div class="members-countdown1">
+          <div class="members-countdown1-in">
+            <div class="section group">
+              <div class="col span_12">
+                <div class="countdown-hl1"> Beeilen Sie sich. Ihr freier Platz erlischt in </div>
+                <div class="Countdown1 Countdown"> <span id="s1">1</span><span id="s11">0</span><span class="double-dot"></span> <span id="s2">0</span><span id="s21">0</span>
+                  <div id="hms">00:10:00</div>
+                  <script type="text/javascript">
+                    function count() {
+                     
+                    var startTime = document.getElementById('hms').innerHTML;
+                    var s1 = document.getElementById('s1').innerHTML;
+                    var s11 = document.getElementById('s11').innerHTML;
+                    var s2 = document.getElementById('s2').innerHTML;
+                    var s21 = document.getElementById('s21').innerHTML;
+                    var pieces = startTime.split(":");
+                    var time = new Date();    
+                    //time.setHours(pieces[0]);
+                    //time.setMinutes(pieces[1]);
+                    time.setMinutes(s1+s11);
+                   // time.setSeconds(pieces[2]);
+                    time.setSeconds(s2+s21);
+                    var timedif = new Date(time.valueOf() - 1000);
+                    var newtime = timedif.toTimeString().split(" ")[0];
+                   // document.getElementById('hms').innerHTML=newtime;
+                
+                    var pieces1 = newtime.split(":");
+                //alert(pieces1[2].toString().charAt(1));
+                    document.getElementById('s1').innerHTML = pieces1[1].toString().charAt(0);
+                    document.getElementById('s11').innerHTML = pieces1[1].toString().charAt(1);
+                    document.getElementById('s2').innerHTML = pieces1[2].toString().charAt(0);
+                    document.getElementById('s21').innerHTML = pieces1[2].toString().charAt(1);
+                    if((pieces1[1] != 0) || (pieces1[2] != 0))
+                        setTimeout(count, 1000);
+                }
+                count();
+                 
+                </script>
+                </div>
+                <!--<div class="Countdown1 Countdown"> <span>0</span> <span>0</span> <span class="double-dot"></span> <span >0</span> <span >0</span></div>-->
+                <!--<div class="Countdown1 Countdown"> <span id="s1">0</span> <span id="s2">0</span> <span class="double-dot"></span> <span id="s3">0</span> <span id="s4">0</span> <div id="hms">00:00:10</div></div>-->
+                <!--Countdown1 Countdown-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--members-countdown1-->
+      </div>
+    </div>
+  </div>
+  <!--counter-sec1-->
+  <div class="zugriff-section">
+    <div class="zugriff-container">
+      <div class="section group">
+        <div class="col span_12">
+          <!--<div id="clickme">Click here</div>-->
+          <div class="steps" id="steps">
+            <div class="step" id="step1"><span class="st-icon"><img src="images/step1-icon.png"></span><span class="st-name">ZUGANGEINZAHLUNG</span></div>
+            <div class="step" id="step2"><span class="st-icon"><img src="images/step2-icon.png"></span><span class="st-name">BEOBACHTEN</span></div>
+            <div class="step" id="step3"><span class="st-icon"><img src="images/step3-icon.png"></span><span class="st-name">ERHALTEN</span></div>
+          </div>
+          <div class="st-bot-content">Nehmen Sie anInvestieren Sie in IhrSehen Sie Ihre Jede Woche <br>
+            unserem Programm teilAnlagenkontotäglichen RenditenBitcoins! </div>
+        </div>
+      </div>
+    </div>
+    <!--zugriff-container-->
+  </div>
+  <style>
+    	/*#step1, #step2, #step3, #step4
+		{
+		  visibility:hidden;
+		}*/
+		#steps div {
+			opacity:0;
+			margin-left:-400px;
+		}
+    </style>
+  <script>
+		 // get your lines into an array
+		var steps = $("#steps div");
+		// set a counter
+		var currAnim = 0;
+		
+		// this method will animate a line
+		var fadeMoveIn = function (line) {
+			$(line).animate({
+				opacity: 1,
+				marginLeft: 10
+			}, {
+				queue: true,
+				duration: 1000,
+				complete: function () {
+					// when this line's animation is done
+					// trigger the next in the queue
+					startQueue();
+				}
+			});
+		};
+		
+		// this function will fire off your animations one by one
+		var startQueue = function () {
+			// increment the queue and send that line to be animated
+			fadeMoveIn(steps[currAnim++]);
+		};
+		var fired = 0;
+		$(window).scroll(function () {
+		 	var winheight =	$( window ).height();
+			if(winheight > 500){
+			   if(fired == 0){
+					$('.step').each(function(){
+						var sel = $(this);
+						displayone(sel);
+					 });
+					 //startQueue();
+			       fired = 1;
+			    }
+			}
+		});
+		var time=500;
+		function displayone(sel){
+		  setTimeout(function(){
+		    //sel.css({"opacity":"1", "margin-left":"10px"});
+			sel.animate({
+				opacity: 1,
+				marginLeft: 10
+			});
+		  },time);
+		  time +=time;
+		}
+		
+	</script>
+  <!--testimonials-->
+  <div class="profit-sec livetrade-sec">
+    <div class="profit-container" id="maincontent">
+      <div class="profit-sec-hl slide-top">Verifizierte Ergebnisse durch Bitcoin-Drittinstitute </div>
+      <div class="profit-table">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <thead>
+            <tr>
+              <th>CriptoMatic App Member</th>
+              <th>Profit</th>
+              <th>Trade Time</th>
+              <th>Currency</th>
+              <!-- <th width="100">&nbsp;</th> -->
+            </tr>
+          </thead>
+          <tbody id="trades">
+            <!--<tr class="success" title=""><td align="center"><span>Jan Amsel</span> just won a trade...</td><td class="payoutwon" align="center">€ 260</td><td class="time" align="center">2016/12/09 13:25:27</td><td class="currency" align="center"><span>EUR/CHF</span></td><td align="center"><span><img src="images/bluetick.png" height="20px"></span></td></tr>-->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--profit-container-->
+  </div>
+  <!--profit-sec-->
+  <script>
+position=['CALL','PUT'];
+asset=['USD/CHF','GBP/USD','CHF/JPY','EUR/USD','NZD/USD','USD/CAD','EUR/JPY','EUR/CHF','EUR/GBP','NZD/USD','GBP/CHF'];
+profit=0;
+
+win=0;
+lost=0;
+names=[/*'Naresh',*/'Dominik Hueber','Sven Rothstein','Sabrina Adler','Max Werner','Eric Frankfurter','Klaudia Shuster','Robert Glockner','Tobias Baecker','Doreen Berg','Maik Zimmer','Lukas Beich','Jörg Beike','Juliane Schmid','Jonas Eichel','Jens Fiedler','Ralf Eberhart','Lukas Freud','Brigitte Müller','Klaus Himmel','Philipp Boehm','Dominik Ziegler','Paul Wannemaker','Felix Lehmann','Dominik Weissmuller','Nicole Berg','Mike Weiss','Jan Amsel','Martin Duerr','Kerstin Blau','Lena Thalberg','Claudia Dietrich','Anna Eisenberg','Antje Fleischer','Lena Frankfurter','Kerstin Weiss','Sophia Meister','Lukas Schweitzer','Franziska Sankt','Jana Seiler','Patrick Theissen','Matthias Egger','Dieter Grunwald','Sebastian Saenger','Michael König','Andrea Lowe','Anna Engel','Antje Winkel','Stefanie Koertig','Jessika König','Jennifer Ehrlichmann'/*,'Grace','Steven','Jules','Melanie','Claudia','Jessie','Judy','Frances','William','Denise','Mark','Shane','Lisa','Jo','Terry','George','Ronald','Sheena','Wilbert','Harold','Don','Samuel','Jose','Kenneth','Suzanne','Tiffany','David','Alma','John','James','Arturo','Jessica','Janet','Jeanine','Allyson','Lorene','Terry','Stacy','Benjamin','Daniel','Daniel','Heather','Abraham','Maureen','Caroline','Johnny','David','Tori','Monty','Carol','Wendy','Eve','Robert','Crystal','Ruth','Kenny','Rachel','Gary','David','Nicholas','Jeffery','Matthew'*/];
+function rand_num(min,max) {
+	var number = min + Math.floor(Math.random() * max);
+	return number;
+}
+function rand_num2(min,max) {
+	var number = min + Math.floor((Math.random() * max)/2);
+	return number;
+}
+function numberCom(val) {
+	while (/(\d+)(\d{3})/.test(val.toString())) val = val.toString().replace(/(\d+)(\d{3})/, "$1"+","+"$2");
+	return val;
+}
+var html;
+function mkChanges() {
+	var p = rand_num(1,100);
+	p=p%2;
+	var xposition=position[p];
+	
+	var a = rand_num(0,10);
+	var xasset=asset[a];
+	
+	var payout = rand_num2(200,800);
+	profit+=payout;
+	var name=names[rand_num(0,names.length)];
+	html='<tr class="success" title=""><td align="center"><span>'+name+'</span> just won a trade...</td><td class="payoutwon" align="center">€ '+numberCom(payout)+'</td><td align="center" class="time" >'+getDateTime(rand_num(1,2))+'</td><td align="center" class="currency"><span>'+xasset+'</span></td><td align="center">&nbsp;</td></tr>'+html;
+	
+	$("#trades").html(html);
+	/*$("#TOTAL").html("$"+numberCom(profit));
+	$("#WON").html("100 %");
+	$("#LOST").html("0 %");*/
+	clearInterval(mC);
+	mC=setInterval(mkChanges,rand_num(700,3000));
+}
+var mC=setInterval(mkChanges,rand_num(700,3000));
+/*$("#TOTAL").html("$"+numberCom(profit));*/
+function getDateTime(sec) {
+	
+    var now     = new Date(Date.now() - (sec*1000)); 
+	//return now.getDate();
+    var year    = now.getFullYear();
+    var month   = now.getMonth()+1; 
+    var day     = now.getDate();
+    var hour    = now.getHours();
+    var minute  = now.getMinutes();
+    var second  = now.getSeconds(); 
+    if(month.toString().length == 1) {
+        var month = '0'+month;
+    }
+    if(day.toString().length == 1) {
+        var day = '0'+day;
+    }   
+    if(hour.toString().length == 1) {
+        var hour = '0'+hour;
+    }
+    if(minute.toString().length == 1) {
+        var minute = '0'+minute;
+    }
+    if(second.toString().length == 1) {
+        var second = '0'+second;
+    }   
+    var dateTime = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second;   
+    return dateTime;
+}
+
+function AddTrade() {
+	for(var i=0;i<600;i+=rand_num(60,65))
+	{
+		//alert(i);
+		var p = rand_num(1,100);
+		p=p%2;
+		var xposition=position[p];
+		
+		var a = rand_num(0,10);
+		var xasset=asset[a];
+		
+		var payout = rand_num2(100,900);
+		profit+=payout;
+		var name=names[rand_num(0,names.length)];
+		html+='<tr class="success"><td align="center"><span>'+name+'</span> just won a trade... </td><td class="payoutwon" align="center"> € '+numberCom(payout)+'</td><td class="time" align="center">'+getDateTime(i)+'</td><td align="center" class="currency"><span>'+xasset+'</span></td><td align="center">&nbsp;</td></tr>';
+	}
+	$("#trades").html(html);
+	/*$("#TOTAL").html("$"+numberCom(profit));
+	$("#WON").html("100 %");
+	$("#LOST").html("0 %");*/
+}
+AddTrade();
+</script>
+  <div class="appreturn-sec">
+    <div class="" id="maincontent">
+      <div class="profit-sec-hl slide-top" style="color:#fff;">Registrieren Sie sich jetzt um ein Teil von CryptoMatic zu werden</div>
+      <div class="memberform2">
+        <div class="section group">
+          <div class="col span_4">
+            <div class="signup-form slide-left members-form1">
+              <div class="form-field">
+              <form action="http://cabinet.de.cryptomatic-app.com/register" method="POST" id="bigForm2" onsubmit="gtag('event', 'submitLand', { 'event_category': 'submitForm'});w.yaCounter49768696.reachGoal ('submitLand');">
+                <input type="text" class="name-input first_nameInclude" placeholder="Vorname" value="" name="first_name">
+                <input type="text" class="name-input last_nameInclude" placeholder="Nachname" name="last_name">
+                <input type="email" class="email-input emailInclude" placeholder="E-Mail" value="" name="email">
+                <input type="password" class="password-input" placeholder="Wählen Sie ein Passwort" name="password">
+                <div class="phno-field">
+                  <div class="countrycode">
+                    <input type="text" class="phonecc"  placeholder="Vorwahl" name="phonecc" style="padding-left: 37px" maxlength="4">
+                  </div>
+                  <div class="phno">
+                    <input type="text" placeholder="Telefonnummer" class="phone-input" name="phone" style="padding-left: 52px;">
+                  </div>
+                </div>
+                <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
+                <input type="hidden" class="affiliate_id" name="affiliate_id" value="" autocomplete="off">
+                <input type="submit" value="Beginnen sie jetzt Geld zu verdienen ">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col span_8">
+            <div class="imac-img"><img class="slide-right" src="images/app-system-img.png"></div>
+          </div>
+        </div>
+      </div>
+      <!--memberform2-->
+    </div>
+  </div>
+  <!--appreturn-sec-->
+  <div class="faq-sec">
+    <div class="" id="maincontent">
+      <div class="profit-sec-hl slide-top">Häufig gestellte Fragen </div>
+      <div class="faq-box">
+        <div class="faq slide-top">
+          <h2 class="qus">Ich weiß überhaupt nichts über Bitcoins. Kann ich die Software trotzdem benutzen? </h2>
+          <div class="ans">
+            <p>Ja, die CryptoMatic App kann von jedem Benutzbar ob erfahren oder nicht. Man benötigt keine technische oder finanzielle Erfahrung und die App ist sehr Benutzerfreundlich. </p>
+          </div>
+        </div>
+        <div class="faq slide-top">
+          <h2 class="qus">Wieviel kostet es CriptoMatic beizutreten? </h2>
+          <div class="ans">
+            <p>Nichts. Das Programm ist 100% gratis. Alles was Sie tun müssen, ist eine kleine Investition in Ihr Anlagenkonto zu tätigen (Mindesteinzahlung ist €250) um die Software zu aktivieren und mit dem Handeln zu beginnen. Das Geld kann jederzeit, ohne einen Kostenaufwand, abgehoben werden. Natürlich ist der Profit höher, wenn Sie eine größere Einzahlung vornehmen. </p>
+          </div>
+        </div>
+        <div class="faq slide-top">
+          <h2 class="qus">Warum ist CryptoMatic umsonst?</h2>
+          <div class="ans">
+            <p>Die Nutzung unserer Software ist Provisionsfrei, weil es sich für uns zu diesem Zeitpunkt nicht um Geld handelt. Wir bitten Sie lieber um eine Referenz und im Gegenzug erhalten Sie uneingeschränkten Zugang zu allen Vorteilen unserer Software, so wie wir ihn auch haben. Für uns ist das eine Win-Win Situation! </p>
+          </div>
+        </div>
+        <div class="faq slide-top">
+          <h2 class="qus">Muss man etwas installieren? </h2>
+          <div class="ans">
+            <p>Nein, es ist keine Installation notwendig, da alles Online passiert. Wenn Sie Internet oder WiFi Zugang haben können Sie die Software jederzeit mit jeglichem Gerät nutzen. </p>
+          </div>
+        </div>
+        <div class="faq slide-top">
+          <h2 class="qus">Gibt e seine Profitgarantie? </h2>
+          <div class="ans">
+            <p>Ganz ehrlich, niemand kann einen Profit garantieren aber unsere Mitglieder machen Sich keine Gedanken wegen dem Profit. Sie sind alle sehr zufrieden. Unser Ziel ist es, Ihnen zu helfen eine informierte Entscheidung zu treffen und eine gute Auswahl zu machen, wenn es darum geht, mit was Sie handeln sollten und was es zu vermeiden gilt. Es gibt immer ein Risiko, wenn man mit etwas handelt und der beste Weg Verluste zu vermeiden ist, zu wissen, wie der Markt funktioniert. Das ist, was wir Ihnen zeigen. </p>
+          </div>
+        </div>
+        <div class="faq slide-top">
+          <h2 class="qus">Gibt es tatsächliche Unterstützung? Wie kann ich mit ihnen in Verbindung treten? </h2>
+          <div class="ans">
+            <p>Uns ist klar, dass Blockchain und Bitcoin nicht für jeden Verständlich ist und auch wenn unsere Software sehr einfach zu benutzen ist, haben wir trotzdem einen 24 Stunden Kundendienst per Email und Live Chat! Unser freundlicher und sehr professioneller Kundendienst steht Ihnen jederzeit für Ihre Fragen zur Verfügung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+   		$('.faq h2').click(function(){
+			$(this).next('.ans').slideToggle();
+			if($(this).hasClass('open')){
+				$(this).removeClass('open');
+			}else{
+				$(this).addClass('open');
+			}
+		});
+   </script>
+  <!--makemoney-sec-->
+  <div class="fb-sec">
+    <div id="maincontent">
+      <div class="signup-sec2-hl slide-top" style="color:#223e57;">CriptoMatic App in den Sozialen Medien</div>
+      <div class="fb-container">
+        <div class="section group">
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/buzz-icon.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post1.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post2.png"> </div>
+            <!--user-testimonial-->
+          </div>
+        </div>
+        <!--section-->
+        <div class="section group">
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post3.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post4.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post5.png"> </div>
+            <!--user-testimonial-->
+          </div>
+        </div>
+        <!--section-->
+        <div class="section group">
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post6.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post7.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post8.png"> </div>
+            <!--user-testimonial-->
+          </div>
+        </div>
+        <!--section-->
+      </div>
+      <!--fb-container-->
+    </div>
+    <!--maincontent-->
+  </div>
+  <!--makemoney-sec-->
+  <div id="footercontainer">
+    <footer class="group">
+      <div class="section group">
+        <div class="col span_12">
+          <div class="copyright">© 2018 CryptoMatic App</div>
+          <div class="footer-content">
+            <p>Informationen zu dieser Website: Das Verkaufsvideo der CriptoMatic App ist fiktiv und wurde erstellt, um das Potenzial der CriptoMatic App 3rd Party Signalsoftware abzubilden. Schauspieler wurden verwendet, um diese <br>
+              Gelegenheit zu präsentieren, und es sollte für Unterhaltungszwecken betrachtet werden. Wir garantieren weder Einkommen noch Erfolg, und Beispielergebnisse im Video und anderswo auf dieser Website sind kein <br>
+              Hinweis auf zukünftige Erfolge oder Einnahmen. CriptoMatic App – Alle Rechte vorbehalten@ </p>
+          </div>
+        </div>
+        <!--span_12_of_12-->
+      </div>
+      <!--sec group-->
+    </footer>
+    <!--group-->
+  </div>
+  <!--footercontainer-->
+</div>
+<!--wrapper-->
+<!-- <script>
+            $(document).ready(function() {
+                $(window).fadeThis({
+                    speed: 500,
+                });
+            });
+        </script> -->
+
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/valid.js"></script>
+<script src="js/getdetector.js"></script>
+<script src="js/countries.js"></script>
+<script src=" js/youtubeUP_page2.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    $(document).ready(function() {
+        var session = $.urlParam('session');
+        var email = $.urlParam('email');
+        var first_name = $.urlParam('first_name');
+        var affiliate_id = $.urlParam('affiliate_id');
+
+        if(affiliate_id) {
+            $(".affiliate_id").val(affiliate_id);
+        }
+        if(email)
+        {
+            $(".emailInclude").val(decodeURIComponent(email));
+        }
+        if(first_name)
+        {
+             
+            if(first_name.indexOf('+') == -1){
+                 $(".first_nameInclude").val(first_name);
+                 $(".first_nameInclude").val(decodeURIComponent(first_name));
+              }else{
+                 $(".first_nameInclude").val(first_name.split('+')[0])
+                 $(".last_nameInclude").val(first_name.split('+')[1])
+
+              }
+        }
+        if(session)
+        {
+            $(".session_id").val(session);
+        }
+    });
+
+</script>
+
+</body>
+</html>

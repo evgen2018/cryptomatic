@@ -1,0 +1,978 @@
+ 
+
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>CryptoMatic App</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta http-equiv="cleartype" content="on">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+<link rel="stylesheet" href="css/cols.css" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/font-awesome.css" media="all">
+<link rel="stylesheet" href="css/mobile.css" media="all">
+<!---->
+<!--<script src="jquery.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.fadethis.js"></script>-->
+<!--<script>
+$(function(){
+  if($( window ).width() < 768){
+    $(".welcome-user-content-box").removeClass('slide-left');
+	$(".logo").removeClass('slide-top');
+  }
+   if($( window ).height() < 500){
+    $(".welcome-user-content-box").removeClass('slide-left');
+  }
+})
+</script>-->
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49768696 = new Ya.Metrika2({ id:49768696, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49768696" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123047948-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-123047948-7');
+	</script>
+
+
+
+<script>
+
+function validation()
+
+	{
+
+	
+
+	var form=document.myForm;
+
+	
+
+	if(form.YMP1.value=='')
+
+		{
+
+			$('#name').addClass('error-input');
+
+			$('#name').attr('placeholder','Enter Ihre name.');
+
+			$('#errorDiv').html('Enter Ihre name.');
+
+			form.YMP1.focus();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#name').removeClass('error-input');
+
+		}
+
+if(form.YMP0.value=='')
+
+		{
+
+			$('#email').addClass('error-input');
+
+			$('#email').attr('placeholder','Enter Ihre E-mail.');
+
+			$('#errorDiv').html('Enter Ihre E-mail.');
+
+			form.YMP0.focus();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#email').removeClass('error-input');
+
+		}
+
+	
+
+		if (!isEmail(form.YMP0))
+
+		{
+
+			$('#email').addClass('error-input');
+
+			$('#errorDiv').html('Email is not valid.');
+
+			form.YMP0.focus();
+
+			form.YMP0.select();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#email').removeClass('error-input');
+
+		}
+
+
+
+		
+	 var timer = $('.num').text();
+	
+        //console.log(timer);
+	
+   $('input[name="YMPT"]').val(timer);
+		form.submit();
+
+	
+
+	}
+
+
+
+	
+
+
+
+	function isEmail(formInput)
+
+	{
+
+		var atPosition, dotPosition, lastPosition;
+
+		with (formInput)
+
+		{
+
+			aPosition = value.indexOf("@");
+
+			dotPosition = value.lastIndexOf(".");
+
+			lastPosition = value.length-1;
+
+			if (aPosition < 1 || dotPosition - aPosition < 2 || lastPosition - dotPosition > 6 || lastPosition - dotPosition < 2)
+
+			{
+
+				return(false);
+
+			}
+
+			return(true);
+
+		}
+
+	}
+
+	
+
+	function checkForNumber(number, size) {
+
+		var nbrString = '';
+
+		for (var i = 0; i < number.length; i++) {
+
+			var cc = number.charCodeAt(i);
+
+			if (cc >= 48 && cc < 58) {
+
+				nbrString += number[i];
+
+			}
+
+		}
+
+		return nbrString.length >= size;
+
+	}	
+
+
+
+
+	function validation1()
+
+	{
+
+ 	var timer = $('.num').text();
+	
+        //console.log(timer);
+	
+     $('#ymp1').val(timer);
+
+
+		var form=document.myForm1;
+
+	
+		if(form.YMP1.value=='')
+
+		{
+
+			$('#name2').addClass('error-input');
+
+			$('#name2').attr('placeholder','Enter Ihre name.');
+
+			$('#errorDivnew').html('Enter Ihre name.');
+
+			form.YMP1.focus();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#name2').removeClass('error-input');
+
+		}
+
+	
+
+	
+
+		
+
+	if(form.YMP0.value=='')
+
+		{
+
+			$('#email2').addClass('error-input');
+
+			$('#email2').attr('placeholder','Enter Ihre E-mail.');
+
+			$('#errorDivnew').html('Enter Ihre E-mail.');
+
+			form.YMP0.focus();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#email2').removeClass('error-input');
+
+		}
+
+	
+
+		if (!isEmail(form.email))
+
+		{
+
+			$('#email2').addClass('error-input');
+
+			$('#errorDivnew').html('Email is not valid.');
+
+			form.YMP0.focus();
+
+			form.YMP0.select();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#email2').removeClass('error-input');
+
+		}
+
+
+	
+	
+
+		//form.submit();
+
+	
+
+	}
+	
+	
+	function isEmail(formInput)
+
+	{
+
+		var atPosition, dotPosition, lastPosition;
+
+		with (formInput)
+
+		{
+
+			aPosition = value.indexOf("@");
+
+			dotPosition = value.lastIndexOf(".");
+
+			lastPosition = value.length-1;
+
+			if (aPosition < 1 || dotPosition - aPosition < 2 || lastPosition - dotPosition > 6 || lastPosition - dotPosition < 2)
+
+			{
+
+				return(false);
+
+			}
+
+			return(true);
+
+		}
+
+	}
+
+	
+
+	function checkForNumber(number, size) {
+
+		var nbrString = '';
+
+		for (var i = 0; i < number.length; i++) {
+
+			var cc = number.charCodeAt(i);
+
+			if (cc >= 48 && cc < 58) {
+
+				nbrString += number[i];
+
+			}
+
+		}
+
+		return nbrString.length >= size;
+
+	}	
+
+
+
+
+
+function validation3()
+
+	{
+
+	var timer = $('.num').text();
+	
+        $('#ymp2').val(timer);
+
+		var form=document.myForm2;
+
+	
+	
+
+	if(form.YMP0.value=='')
+
+		{
+
+			$('#popemail').addClass('error-input');
+
+			$('#popemail').attr('placeholder','Enter Ihre E-mail.');
+
+			$('#errorDiv2').html('Enter Ihre E-mail.');
+
+			form.YMP0.focus();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#popemail').removeClass('error-input');
+
+		}
+
+
+	
+
+		if (!isEmail(form.YMP0))
+
+		{
+
+			$('#popemail').addClass('error-input');
+
+			$('#errorDiv2').html('Email is not valid.');
+
+			form.YMP0.focus();
+
+			form.YMP0.select();
+
+			return false;
+
+		}
+
+		else
+
+		{
+
+			$('#popemail').removeClass('error-input');
+
+		}
+
+
+
+		
+		
+       
+		form.submit();
+
+	
+
+	}
+
+
+
+	
+
+
+
+	function isEmail(formInput)
+
+	{
+
+		var atPosition, dotPosition, lastPosition;
+
+		with (formInput)
+
+		{
+
+			aPosition = value.indexOf("@");
+
+			dotPosition = value.lastIndexOf(".");
+
+			lastPosition = value.length-1;
+
+			if (aPosition < 1 || dotPosition - aPosition < 2 || lastPosition - dotPosition > 6 || lastPosition - dotPosition < 2)
+
+			{
+
+				return(false);
+
+			}
+
+			return(true);
+
+		}
+
+	}
+
+	
+
+	function checkForNumber(number, size) {
+
+		var nbrString = '';
+
+		for (var i = 0; i < number.length; i++) {
+
+			var cc = number.charCodeAt(i);
+
+			if (cc >= 48 && cc < 58) {
+
+				nbrString += number[i];
+
+			}
+
+		}
+
+		return nbrString.length >= size;
+
+	}	
+
+
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+  <!--header_container_start-->
+  <div id="headcontainer">
+    <div class="headertop">
+      <header>
+        <div class="logo"><a href=""><img src="images/cryptomaticapp-logo.png"></a></div>
+        <h2 class="headertop-hl">Ein kraftvoller, auf Blockchain basierender<br>
+          Handelsalgorhytmus, der Online Nutzern <br>
+          <span class="c_yellow">1 Bitcoin pro Woche generiert!</span></h2>
+      </header>
+      <!--header video and form sec start-->
+      <div class="headerform-sec">
+        <div class="section group">
+          <div class="col span_8">
+            <div class="header-banner">
+              <div class="banner-in" style="position: relative;">
+              	 <div class="up_sound">Sound einschalten</div>
+                     <img src="images/volume.png" id="volume_up">
+              <div class="anticlicker" style=" position: absolute; bottom: 0; left: 80%; top: 85%; right: 0; z-index: 5; "></div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lfiB9upQsF4?autoplay=1&controls=0&disablekb=0&loop=1&modestbranding=0&rel=0&showinfo=0&playlist=lfiB9upQsF4" frameborder="0" allowfullscreen="" data-gtm-yt-inspected-8157726_6="true" id="710846225"></iframe> -->
+                <div id="ytplayer"></div>
+              </div>
+              <!--banner-in-->
+            </div>
+            <!--header-banner-->
+          </div>
+          <!--col span_8-->
+          <div class="col span_4">
+            <div class="signup-form slide-left">
+              <h5 class="form-hl">Sichern Sie sich Zugang <br>
+                zur CryptoMatic App <br>
+                bevor Ihre private <br>
+                Einladung verfällt.</h5>
+              <form name="myForm" id="contact" method="post" action="php_yaml_api/send.php" onsubmit="gtag('event', 'submitPreLand', { 'event_category': 'submitForm'});w.yaCounter49768696.reachGoal ('submitPreLand');">
+              <div class="form-field">
+                <input type="text" placeholder="Ihre name" id="name" name="first_name" class="name-input first_nameInclude" value="" pattern="(([a-zA-Z]{2,25}\s{1}[a-zA-Z]{2,25})|([a-zA-Z]{2,25}))" required>
+                <input type="email" placeholder="Ihre E-mail" id="email" name="email" class="email-input emailInclude" value="" required>
+                <input type="hidden" name="session" class="session" autocomplete="off">
+                <input type="hidden" name="affiliate_id" class="affiliate_id" autocomplete="off">
+                <input type="submit" value="JETZT BEITRETEN" class="submit-input">
+              </div>
+              </form>
+
+            </div>
+            <!--signup-form-->
+          </div>
+          <!--col span_4-->
+        </div>
+        <!--section-->
+      </div>
+      <!--header video and form sec end-->
+    </div>
+  </div>
+  <!--headcontainer-->
+  <!--header_container_end-->
+  <div class="testimonials">
+    <!--arrow_box-->
+    <div class="testi-container">
+      <h2 class="sec-tl">Was Andere Nutzer Über Criptomatic Zu Sagen Haben</h2>
+      <div class="section group">
+        <div class="col span_6">
+          <div class="user-testimonial slide-left ut-box1">
+            <!--<div class="left">
+              <div class="userimag"><img src="images/testimonial-user1.png"></div>
+            </div>-->
+            <div class="right">
+              <div class="user-content">
+                <h6 class="testi-user-name">Dirk <br>
+                  <span class="bold">Schwarz</span></h6>
+                <p>Ich habe meine Hypothek abbezahlt. <br>
+                  Ich dachte ich würde das nie schaffen <br>
+                  aber ich konnte es gerade tun. <br>
+                  Danke an CryptoMatic für solch eine <br>
+                  wunderbare Software!</p>
+                <div class="profit">Gewinn bis heute: <span>€117.982,5</span></div>
+              </div>
+              <!--user-content-->
+            </div>
+          </div>
+          <!--user-testimonial-->
+        </div>
+        <div class="col span_6">
+          <div class="user-testimonial slide-right ut-box2">
+            <div class="right">
+              <div class="user-content">
+                <h6 class="testi-user-name">Yvonne <br>
+                  <span class="bold">Durr</span></h6>
+                <p>Es ist kaum zu glauben aber vor einem Monat <br>
+                  war ich Arbeitslos und eine ganz normale Mutter <br>
+                  von zwei kleinen Kindern. Heute verdiene ich <br>
+                  mehr Geld als mein Mann, nicht dass es für <br>
+                  mich wichtig wäre wer mehr verdient aber es ist <br>
+                  einfach toll, dass wir nun ein zweites Einkommen <br>
+                  haben und nur mit ein paar Klicks pro Woche. Ich <br>
+                  habe nun endlich das Leben, dass ich mir immer <br>
+                  gewünscht habe. Danke CryptoMatic!“ </p>
+                <div class="profit">Gewinn bis heute: <span>€ 44.721,09</span></div>
+              </div>
+              <!--user-content-->
+            </div>
+          </div>
+          <!--user-testimonial-->
+        </div>
+      </div>
+      <!--section-->
+      <div class="section group">
+        <div class="col span_6">
+          <div class="user-testimonial slide-left ut-box3">
+            <div class="right">
+              <div class="user-content">
+                <h6 class="testi-user-name">Kerstin <br>
+                  <span class="bold">Friedmann</span></h6>
+                <p>Ich habe vor zwei Wochen angefangen und <br>
+                  seitdem ist sehr viel passiert. Ich habe meinen <br>
+                  ersten Bitcoin verdient und der ist heute <br>
+                  €11.400 wert. Das ist ganz schön viel!  Ich konnte <br>
+                  es mir beriets auszahlen lassen und habe auch <br>
+                  schon die Hälfte davon ausgegeben. Heute habe <br>
+                  ich auch schon gewinnbringende Handel auf <br>
+                  meinem Konto gesehen, bisher war alles sehr <br>
+                  positiv! Danke CryptoMatic Software!</p>
+                <div class="profit">Gewinn bis heute: <span>€11.405,59</span></div>
+              </div>
+              <!--user-content-->
+            </div>
+          </div>
+          <!--user-testimonial-->
+        </div>
+        <div class="col span_6">
+          <div class="user-testimonial slide-right ut-box4">
+            <div class="right">
+              <div class="user-content">
+                <h6 class="testi-user-name">Marko <br>
+                  <span class="bold">Theiss</span></h6>
+                <p>Ich habe heute erneut eine Auszahlung <br>
+                  angefordert. Diesmal sind es 3 Bitcoins, WOW! <br>
+                  Ich kann es gar nicht erwarten, das Geld bei <br>
+                  unserem bereits gebuchten Urlaub nach Hawaii <br>
+                  auszugeben. Nie hätte ich gedacht, dass ich <br>
+                  einmal so viel Geld zum Ausgeben hätte!</p>
+                <div class="profit">Gewinn bis heute: <span>€97.236</span></div>
+              </div>
+              <!--user-content-->
+            </div>
+          </div>
+          <!--user-testimonial-->
+        </div>
+      </div>
+      <!--section-->
+    </div>
+  </div>
+  <!--testimonials-->
+  <div class="welcome-sec">
+    <div class="welcome-container">
+      <div class="welcome-tl slide-top">Willkommen bei CryptoMatic</div>
+      <div class="welcome-user-content-box slide-left">
+        <div class="welcome-content-bg">
+          <div class="welcome-content ">
+            <p><span class="bold font20" style="color:#093350;">Ich möchte Sie gerne persönlich bei der CryptoMatic App begrüßen.</span> </p>
+            <p>Ich habe die App vor 5 Jahren erschaffen,  Als Blockchain noch nicht das war, was es heute ist. Das Ziel war es Profit zu generieren! </p>
+            <p>Die <span class="bold">CryptoMatic App</span> besteht aus den intelligentesten Menschen in der Technologie- und Finanzwelt, Menschen die Millionen durch handeln verdient haben. Wir haben unsere Strategien und auch die Software verbessert um unseren Mitgliedern die Möglichkeit zu verschaffen, 1-2 BTC pro Woche zu generieren.</p>
+            <p>Sie haben heute eine einmalige Chance, denn dies ist eine private Einladung ein Teil von der <span class="bold">CryptoMatic App</span> zu werden und täglich größere Profite erzielen als Sie sich vorstellen können. </p>
+            <p>Bitte teilen Sie diese Informationen nicht mit anderen, wir haben nur ein paar freie Plätze. </p>
+            <p>Geben Sie Ihren Namen und Ihre E-Mail-Adresse in das Formular auf dieser Seite ein und ich werde Sie im Mitgliederbereich wiedersehen, wo Sie mit der <span class="bold">CryptoMatic App</span> beginnen können. </p>
+            <p class="signature">Hochachtungsvoll, <br>
+              <img src="images/welcome-signature.png"></p>
+          </div>
+          <!--welcome-content-->
+        </div>
+        <!--welcome-content-bg-->
+      </div>
+      <!--welcome-user-content-box-->
+    </div>
+    <!--welcome-container-->
+  </div>
+  <!--welcome-sec-->
+  <div class="signup-sec2">
+    <div id="maincontent">
+      <div class="signup-sec2-hl slide-top">Zugang zur CryptoMatic App bevor Ihre private Einladung verfällt...</div>
+
+      <form name="myForm1" method="post" action="php_yaml_api/send.php" onsubmit="gtag('event', 'submitPreLand', { 'event_category': 'submitForm'});w.yaCounter49768696.reachGoal ('submitPreLand');">
+      <div class="form">
+      
+        <div class="inputfield textfield">
+          <div class="section group">
+            <div class="col span_4">
+              <input class="slide-left first_nameInclude" type="text" name="first_name" id="name2" placeholder="Ihre name" pattern="(([a-zA-Z]{2,25}\s{1}[a-zA-Z]{2,25})|([a-zA-Z]{2,25}))" required>
+            </div>
+            <div class="col span_4">
+              <input class="slide-right emailInclude" type="email" placeholder="Ihre E-Mail" name="email" id="email2" required>
+            </div>
+            <div class="col span_4">
+                <input type="hidden" name="session" class="session" autocomplete="off">
+                <input type="hidden" name="affiliate_id" class="affiliate_id" autocomplete="off">
+              <input class="slide-bottom" value="JETZT BEITRETEN" type="submit">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </form>
+    </div>
+    <!--maincontent-->
+  </div>
+  <!--signup-sec2-->
+  <div class="signup-sec2 makemoney-sec">
+    <div id="maincontent">
+      <div class="makemoney-hl slide-right">Verdienen Sie Geld im Handumdrehen!</div>
+    </div>
+    <!--maincontent-->
+  </div>
+  <!--makemoney-sec-->
+  <div class="device-sec">
+    <div id="maincontent">
+      <div class="section group">
+        <div class="col span_6">
+          <div class="device-content slide-right"><span class="redbig bold">CriptoMatic ist für <br>
+            jedes Gerätverfügbar. </span> <br>
+            <span class="bold">Seien Sie Clever!</span> - Treten Sie der finanziellen Revolution bei. </div>
+        </div>
+        <div class="col span_6">
+          <div class="devicephoto slide-left"><img src="images/device-img.png"></div>
+        </div>
+      </div>
+      <!--section group-->
+    </div>
+    <!--maincontent-->
+  </div>
+  <!--makemoney-sec-->
+  <div class="fb-sec">
+    <div id="maincontent">
+      <div class="signup-sec2-hl slide-top" style="color:#223e57;">CriptoMatic App in den Sozialen Medien</div>
+      <div class="fb-container">
+        <div class="section group">
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/buzz-icon.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post1.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post2.png"> </div>
+            <!--user-testimonial-->
+          </div>
+        </div>
+        <!--section-->
+        <div class="section group">
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post3.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post4.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post5.png"> </div>
+            <!--user-testimonial-->
+          </div>
+        </div>
+        <!--section-->
+        <div class="section group">
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post6.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post7.png"> </div>
+            <!--user-testimonial-->
+          </div>
+          <div class="col span_4">
+            <div class="user-testimonial user-fb-post"> <img src="images/twit-post8.png"> </div>
+            <!--user-testimonial-->
+          </div>
+        </div>
+        <!--section-->
+      </div>
+      <!--fb-container-->
+    </div>
+    <!--maincontent-->
+  </div>
+  <!--makemoney-sec-->
+  <div id="footercontainer">
+    <footer class="group">
+      <div class="section group">
+        <div class="col span_12">
+          <div class="copyright">© 2018 CryptoMatic App</div>
+          <div class="footer-content">
+            <p>Informationen zu dieser Website: Das Verkaufsvideo der CriptoMatic App ist fiktiv und wurde erstellt, um das Potenzial der CriptoMatic App 3rd Party Signalsoftware abzubilden. Schauspieler wurden verwendet, um diese <br>
+              Gelegenheit zu präsentieren, und es sollte für Unterhaltungszwecken betrachtet werden. Wir garantieren weder Einkommen noch Erfolg, und Beispielergebnisse im Video und anderswo auf dieser Website sind kein <br>
+              Hinweis auf zukünftige Erfolge oder Einnahmen. CriptoMatic App – Alle Rechte vorbehalten@ </p>
+          </div>
+        </div>
+        <!--span_12_of_12-->
+      </div>
+      <!--sec group-->
+    </footer>
+    <!--group-->
+  </div>
+  <!--footercontainer-->
+</div>
+<!--wrapper-->
+<!--popup start-->
+<div id="boxes">
+  <div style="top: 0x; left: 0x; bottom:0px; right:0px; position:fixed; display: none;" id="dialog" class="window"> <a href="#" class="close cl-btn"><img src="images/close-icon.png"></a>
+    <div class="mod_content">
+      <div class="popup-hl1">VERPASSEN SIE NICHT IHRE GELEGENHEIT
+        FINANZIELLE FREIHEIT ZU ERHALTEN </div>
+      <div class="Seien-text">Seien Sie dabei, unser System ist noch verfügbar! </div>
+      <div class="mod_content_in">
+        <h3>Erzielen Sie ab jetzt 
+          1 Bitcoin pro Woche<br>
+        </h3>
+        <div style="color:#FF0000 !important; font-size:18px;" align="center" id="errorDiv2"></div>
+        <div class="popup-form-field form-field">
+        
+          <form name="myForm2" method="post" action="php_yaml_api/send.php" onsubmit="gtag('event', 'submitPreLand', { 'event_category': 'submitForm'});w.yaCounter49768696.reachGoal ('submitPreLand');">
+            <input type="email" name="email" id="popemail" placeholder="Ihre E-mail" class="email-input emailInclude" value="" required>
+            <input type="hidden" id="name" name="first_name" value=" ">
+            <input type="hidden" name="session" class="session" autocomplete="off">
+            <input type="hidden" name="affiliate_id" class="affiliate_id" autocomplete="off">
+            <input type="submit" value="JETZT BEITRETEN" class="submit-input">
+          </form>
+        </div>
+      </div>
+      <!--mod_content_in-->
+    </div>
+  </div>
+  <!-- Mask to cover the whole screen -->
+  <div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {	
+setTimeout(function() {	
+		var id = '#dialog';
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(1000);	
+		$('#mask').fadeTo("slow",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+
+	 $(id).fadeIn(2000);
+
+		setInterval(function(){
+		$('#mask').fadeIn(1000);	
+		$('#mask').fadeTo("slow",0.8);	
+		$(id).fadeIn(2000);
+		},60000);
+	},30000);	
+	
+	
+
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});		
+	
+});
+
+</script>
+<!--popup end-->
+<!-- <script>
+            $(document).ready(function() {
+                $(window).fadeThis({
+                    speed: 500,
+                });
+            });
+        </script> -->
+
+
+<script src=" js/getdetector.js"></script>
+<script src=" js/youtubeUP.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<!-- <script src=" js/commonJs.js"></script> -->
+<script type="text/javascript">
+    // if (device.android()) {
+    //   $('.anticlicker').hide();
+    // }
+
+    var session = $.urlParam('session');
+    var affiliate_id = $.urlParam('aff_id');
+    var ep = "comeback.html?session=" + session + '&aff_id=' + affiliate_id;
+
+    $(document).ready(function () {
+      var session = $.urlParam('session');
+      var affiliate_id = $.urlParam('aff_id');
+      var email = $.urlParam('email');
+          var first_name = $.urlParam('first_name');
+      var cb = $.urlParam('cb');
+      if (cb == 0) {
+        exitpage = false;
+      }
+
+      if (session) {
+        $(".session").val(session);
+      }
+
+      if (affiliate_id) {
+        $(".affiliate_id").val(affiliate_id);
+      }
+          if(email)
+          {
+              $(".emailInclude").val(decodeURIComponent(email));
+          }
+          if(first_name)
+          {
+              $(".first_nameInclude").val(first_name);
+          }
+
+    });
+
+    function sendForm(){
+    	$('body').find('form').on( "submit", function( event ) {
+		  	event.preventDefault();
+		  	$(this).find('input[type="submit"]').val('Warten Sie mal...').css('color','#e8460e');
+			$.ajax({
+				method: "POST",
+			  	url: "php_yaml_api/send.php",
+			  	data: $( this ).serialize()
+			}).success(function(data) {
+			  window.location = data
+			});
+
+
+		  
+		});
+    }
+    sendForm();
+
+  </script>
+
+</body>
+</html>
